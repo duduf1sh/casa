@@ -1,0 +1,65 @@
+.<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <title>Casa</title>
+    </head>
+    <body>
+        <div id="corpo">
+            
+            <div id="titulo">
+                <h1>PROJETO CASA</h1>
+            </div>
+            
+            <div id="saldo">
+                <h4>Saldo Inicial - R$120.000,00</h4>
+                <h2>Saldo Atual</h2>
+                <h3>R$24.327,70</h3>
+            </div>
+            <div id="current_date">
+                <script>
+                date = new Date();
+                year = date.getFullYear();
+                month = date.getMonth() + 1;
+                day = date.getDate();
+                document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
+                </script>
+            </div>
+            
+            <div id="corpo-tabela">
+                <table id="tabela">
+                    <thead>
+                        <tr>
+                            <th>Descrição</th><th>Data</th><th>Valor</th><th>Forma de Pagamento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Compra da Casa</td><td>25/08/22</td><td>R$80.000,00</td><td>PIX</td>
+                        </tr>
+                        <tr>
+                            <td>Janelas</td><td>09/09/22</td><td>R$2.000,00</td><td>PIX</td>
+                        </tr>
+                        <tr>
+                            <td>Piso e 4 kits portas prontas</td><td>12/09/22</td><td>R$9.220,79</td><td>PIX</td>
+                        </tr>
+                        <tr>
+                            <td>Revestimento Cozinha</td><td>12/09/22</td><td>R$966,36</td><td>PIX</td>
+                        </tr>
+                        <tr>
+                            <td>8 peças de andaimes + Betoneira </td><td>13/09/22</td><td>R$446,00 (mensal)</td><td>PIX</td>
+                        </tr>
+                        <tr>
+                            <td>Fachada Nova:<br> 11 vigotas 3.5m de 10x4, 01 vigota de 4m de 14x4, 01 vigota de 4.5 de 15x4, 100m ripa 2.2, 
+                                10m de ripão de 4cm, 02kg de prego 17/21, 400 telhas cerâmicas</td><td>14/09/22</td><td>R$3.039,15</td><td>PIX</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>    
+
+    </body>
+</html>
